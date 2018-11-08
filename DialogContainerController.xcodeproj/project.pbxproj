@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3F0C666A219471BB00C5ACE9 /* DialogContainerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0C6668219471BB00C5ACE9 /* DialogContainerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F0C66752194727200C5ACE9 /* DialogContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C66702194727200C5ACE9 /* DialogContainerController.swift */; };
+		3F0C66762194727200C5ACE9 /* SimpleDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C66712194727200C5ACE9 /* SimpleDialogViewController.swift */; };
+		3F0C66772194727200C5ACE9 /* DialogContainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0C66722194727200C5ACE9 /* DialogContainerController.xib */; };
+		3F0C66782194727200C5ACE9 /* SimpleDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0C66732194727200C5ACE9 /* SimpleDialogViewController.xib */; };
+		3F0C66792194727200C5ACE9 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C66742194727200C5ACE9 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F0C6665219471BB00C5ACE9 /* DialogContainerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DialogContainerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0C6668219471BB00C5ACE9 /* DialogContainerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogContainerController.h; sourceTree = "<group>"; };
 		3F0C6669219471BB00C5ACE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0C66702194727200C5ACE9 /* DialogContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogContainerController.swift; sourceTree = "<group>"; };
+		3F0C66712194727200C5ACE9 /* SimpleDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDialogViewController.swift; sourceTree = "<group>"; };
+		3F0C66722194727200C5ACE9 /* DialogContainerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogContainerController.xib; sourceTree = "<group>"; };
+		3F0C66732194727200C5ACE9 /* SimpleDialogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleDialogViewController.xib; sourceTree = "<group>"; };
+		3F0C66742194727200C5ACE9 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,11 @@
 		3F0C6667219471BB00C5ACE9 /* DialogContainerController */ = {
 			isa = PBXGroup;
 			children = (
+				3F0C66702194727200C5ACE9 /* DialogContainerController.swift */,
+				3F0C66722194727200C5ACE9 /* DialogContainerController.xib */,
+				3F0C66712194727200C5ACE9 /* SimpleDialogViewController.swift */,
+				3F0C66732194727200C5ACE9 /* SimpleDialogViewController.xib */,
+				3F0C66742194727200C5ACE9 /* Utility.swift */,
 				3F0C6668219471BB00C5ACE9 /* DialogContainerController.h */,
 				3F0C6669219471BB00C5ACE9 /* Info.plist */,
 			);
@@ -95,6 +110,7 @@
 				TargetAttributes = {
 					3F0C6664219471BB00C5ACE9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0C66782194727200C5ACE9 /* SimpleDialogViewController.xib in Resources */,
+				3F0C66772194727200C5ACE9 /* DialogContainerController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0C66762194727200C5ACE9 /* SimpleDialogViewController.swift in Sources */,
+				3F0C66752194727200C5ACE9 /* DialogContainerController.swift in Sources */,
+				3F0C66792194727200C5ACE9 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +282,7 @@
 		3F0C666E219471BB00C5ACE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.elviro.DialogContainerController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +309,7 @@
 		3F0C666F219471BB00C5ACE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
