@@ -158,12 +158,13 @@ extension UIViewController {
         present(
             DialogContainerController(
                 contentViewController: interactionSetup.getContentViewController { [weak self] action in
-                    interactionSetup.handleAction?(action)
-                    
                     if action.shouldDismiss {
-                        self?.dismiss(
-                            animated: presentationSetup.animated,
-                            completion: interactionSetup.onDismissCompletion)
+                        self?.dismiss(animated: presentationSetup.animated) {
+                            interactionSetup.onDismissCompletion?()
+                            interactionSetup.handleAction?(action)
+                        }
+                    } else {
+                        interactionSetup.handleAction?(action)
                     }
                 },
                 presentationSetup: presentationSetup),
