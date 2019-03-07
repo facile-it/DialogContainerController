@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleDialogViewController" customModule="DialogExperiment" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleDialogViewController" customModule="DialogContainerController" customModuleProvider="target">
             <connections>
                 <outlet property="buttonsContainerView" destination="eQU-Wq-BFn" id="w1O-w8-neJ"/>
                 <outlet property="buttonsContainerViewHeightConstraint" destination="Cin-Dd-pU7" id="Z1G-gl-53R"/>
@@ -73,7 +73,7 @@
                             <rect key="frame" x="0.0" y="64" width="270" height="42"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-JG-Ofd">
-                                    <rect key="frame" x="8" y="0.0" width="254" height="20"/>
+                                    <rect key="frame" x="15" y="0.0" width="240" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Tra-nK-d4T"/>
                                     </constraints>
@@ -84,10 +84,10 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="qS7-JG-Ofd" secondAttribute="trailing" constant="8" id="PcL-NE-eWU"/>
+                                <constraint firstAttribute="trailing" secondItem="qS7-JG-Ofd" secondAttribute="trailing" constant="15" id="PcL-NE-eWU"/>
                                 <constraint firstAttribute="bottom" secondItem="qS7-JG-Ofd" secondAttribute="bottom" constant="22" id="cS8-ti-pAB"/>
                                 <constraint firstItem="qS7-JG-Ofd" firstAttribute="top" secondItem="IQ4-Ha-9RL" secondAttribute="top" id="grd-T5-UQj"/>
-                                <constraint firstItem="qS7-JG-Ofd" firstAttribute="leading" secondItem="IQ4-Ha-9RL" secondAttribute="leading" constant="8" id="z0m-ff-Dkk"/>
+                                <constraint firstItem="qS7-JG-Ofd" firstAttribute="leading" secondItem="IQ4-Ha-9RL" secondAttribute="leading" constant="15" id="z0m-ff-Dkk"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQU-Wq-BFn">
