@@ -38,6 +38,8 @@ public final class DialogContainerController: UIViewController {
         view.backgroundColor = .clear
     }
     
+    public override var preferredStatusBarStyle: UIStatusBarStyle { presentationSetup.preferredStatusBarStyle }
+    
     private let contentViewController: UIViewController
     private let presentationSetup: PresentationSetup
     public init(contentViewController: UIViewController, presentationSetup: PresentationSetup) {
@@ -79,19 +81,22 @@ public final class DialogContainerController: UIViewController {
         public var modalPresentationStyle: UIModalPresentationStyle
         public var background: Background
         public var shadow: Shadow
+        public var preferredStatusBarStyle: UIStatusBarStyle
         
         public init(
             animated: Bool,
             modalTransitionStyle: UIModalTransitionStyle,
             modalPresentationStyle: UIModalPresentationStyle,
             background: Background,
-            shadow: Shadow)
+            shadow: Shadow,
+            preferredStatusBarStyle: UIStatusBarStyle)
         {
             self.animated = animated
             self.modalTransitionStyle = modalTransitionStyle
             self.modalPresentationStyle = modalPresentationStyle
             self.background = background
             self.shadow = shadow
+            self.preferredStatusBarStyle = preferredStatusBarStyle
         }
         
         public static let `default` = PresentationSetup(
@@ -99,7 +104,8 @@ public final class DialogContainerController: UIViewController {
             modalTransitionStyle: .crossDissolve,
             modalPresentationStyle: .overFullScreen,
             background: .default,
-            shadow: .default)
+            shadow: .default,
+            preferredStatusBarStyle: .default)
         
         public struct Background {
             public var color: UIColor
