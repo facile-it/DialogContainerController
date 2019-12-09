@@ -179,21 +179,6 @@ extension UIViewController {
     }
 }
 
-extension UINavigationController {
-    
-    //From doc.: "Called when the system needs the view controller to use for determining status bar style."
-    open override var childForStatusBarStyle: UIViewController? {
-        return visibleViewController
-    }
-    
-    open override var preferredStatusBarStyle: UIStatusBarStyle {
-        guard let page = visibleViewController else {
-            return super.preferredStatusBarStyle
-        }
-        return page.preferredStatusBarStyle
-    }
-}
-
 // MARK: - PRIVATE
 
 extension DialogContainerController.PresentationSetup.Background {
