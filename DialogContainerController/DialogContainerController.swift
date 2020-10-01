@@ -22,9 +22,10 @@ public final class DialogContainerController: UIViewController {
     @IBOutlet public weak var contentView: UIView! {
         didSet {
             addChild(contentViewController)
+            contentViewController.didMove(toParent: self)
+            
             contentViewController.view.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubviewConstrainedToSameBounds(contentViewController.view)
-            contentViewController.didMove(toParent: self)
             
             contentView.isOpaque = false
             contentView.backgroundColor = .clear
