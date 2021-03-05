@@ -1,3 +1,7 @@
 .DS_Store
 DialogContainerController.xcodeproj/project.xcworkspace/xcuserdata
 DialogContainerController.xcodeproj/xcuserdata
+Packages
+.build/
+xcuserdata
+DerivedData/
