@@ -23,11 +23,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "DialogContainerController",
-            dependencies: [],
-            resources: [
-                .process("DialogContainerController.xib"),
-                .process("SimpleDialogViewController.xib")
-            ]),
+            dependencies: []),
         .testTarget(
             name: "DialogContainerControllerTests",
             dependencies: ["DialogContainerController"]),
