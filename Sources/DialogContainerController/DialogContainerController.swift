@@ -47,7 +47,7 @@ public final class DialogContainerController: UIViewController {
         self.contentViewController = contentViewController
         self.presentationSetup = presentationSetup
         
-        super.init(nibName: "DialogContainerController", bundle: Bundle(for: DialogContainerController.self))
+        super.init(nibName: "DialogContainerController", bundle: Bundle.module)
         
         modalTransitionStyle = presentationSetup.modalTransitionStyle
         modalPresentationStyle = presentationSetup.modalPresentationStyle

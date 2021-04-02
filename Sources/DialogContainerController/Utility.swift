@@ -34,6 +34,7 @@ extension UIColor {
     }
 }
 
+@available(iOS 10.0, *)
 extension UIImage {
     static func solidColor(_ color: UIColor) -> UIImage {
         let size = CGSize(width: 3, height: 3)

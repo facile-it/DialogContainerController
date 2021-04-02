@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 10.0, *)
 public final class SimpleDialogViewController: UIViewController {
     
     private let setup: Setup
@@ -11,7 +12,7 @@ public final class SimpleDialogViewController: UIViewController {
         self.geometry = geometry
         self.style = style
         self.onAction = onAction
-        super.init(nibName: "SimpleDialogViewController", bundle: Bundle(for: SimpleDialogViewController.self))
+        super.init(nibName: "SimpleDialogViewController", bundle: Bundle.module)
     }
     
     public required init?(coder aDecoder: NSCoder) {
