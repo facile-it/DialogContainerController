@@ -12,7 +12,7 @@ public final class SimpleDialogViewController: UIViewController {
         self.geometry = geometry
         self.style = style
         self.onAction = onAction
-        super.init(nibName: "SimpleDialogViewController", bundle: nil)
+        super.init(nibName: "SimpleDialogViewController", bundle: Bundle.module)
     }
     
     public required init?(coder aDecoder: NSCoder) {
