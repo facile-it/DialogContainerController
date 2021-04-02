@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 10.0, *)
 public final class SimpleDialogViewController: UIViewController {
     
     private let setup: Setup
